@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design on mobile -->
+    <title>Music Player</title> <!-- Title of the webpage shown in browser tab -->
+    
+    <!-- Link to external CSS for styling the page -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome icon library for adding icons to controls -->
+    <script src="https://kit.fontawesome.com/2b93648706.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Container for the music player, used to center and style the player interface -->
+    <div class="container">
+        <div class="music-player"> <!-- Main music player component -->
+            
+            <!-- Navigation section with two circle buttons: back and menu icons -->
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i> <!-- Back arrow icon -->
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i> <!-- Menu icon for additional options -->
+                </div>
+            </nav>
+            
+            <!-- Image of the song thumbnail -->
+            <img src="media/thumbnail.png" alt="ThumbnailSongImg" class="song-img">
+            
+            <!-- Display song title and artist name -->
+            <h1>Ishq Mubarak</h1> <!-- Song title -->
+            <p>Arijit Singh</p> <!-- Artist name -->
+
+            <!-- Audio element to load and play the song file -->
+            <audio id="song"> <!-- Audio element with ID to be controlled via JavaScript -->
+                <source src="media/Ishq Mubarak - Arijit Singh.mp3" type="audio/mpeg"> <!-- MP3 source -->
+            </audio>
+
+            <!-- Progress bar to display song progress -->
+            <input type="range" value="0" id="progress"> <!-- Range input styled as a progress bar, initialized to 0 -->
+
+            <!-- Control buttons for playback -->
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div> <!-- Previous song icon -->
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div> <!-- Play/Pause button; icon changes based on playback state -->
+                <div><i class="fa-solid fa-forward"></i></div> <!-- Next song icon -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

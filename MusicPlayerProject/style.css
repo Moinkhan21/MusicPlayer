@@ -1,0 +1,118 @@
+/* Global Reset */
+* {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    font-family: 'Poppins', sans-serif; /* Set font for all elements */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Main container styling */
+.container {
+    width: 100%; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #333; /* Dark background color */
+    display: flex; /* Center elements inside the container */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Horizontally center items */
+    flex-wrap: wrap; /* Allow wrapping of child elements */
+}
+
+/* Music player styling */
+.music-player {
+    background-color: #ffe0e5; /* Light pink background */
+    width: 400px; /* Fixed width for the music player */
+    padding: 25px 35px; /* Padding around content */
+    text-align: center; /* Center text inside the player */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Navigation bar inside the music player */
+nav {
+    display: flex; /* Align items in a row */
+    justify-content: space-between; /* Space items evenly across nav width */
+    margin-bottom: 30px; /* Space below the nav */
+}
+
+nav .circle {
+    border-radius: 50%; /* Make circular buttons */
+    width: 40px; /* Fixed width for circle */
+    height: 40px; /* Fixed height for circle */
+    line-height: 40px; /* Center text vertically */
+    background-color: #fff; /* White background */
+    color: #f53192; /* Pink color for icons */
+    box-shadow: 0 5px 10px rgba(255, 26, 26 , 0.22); /* Subtle shadow for depth */
+}
+
+/* Styling for the song thumbnail image */
+.song-img {
+    width: 220px; /* Fixed width for image */
+    border-radius: 50%; /* Make the image circular */
+    border: 8px solid #fff; /* White border around the image */
+    box-shadow: 0 10px 60px rgba(255, 26, 26 , 0.22); /* Large shadow for depth */
+}
+
+/* Song title styling */
+.music-player h1 {
+    font-size: 20px; /* Medium font size */
+    font-weight: 400; /* Normal font weight */
+    color: #333; /* Dark text color */
+    margin-top: 20px; /* Space above the title */
+}
+
+/* Artist name styling */
+.music-player p {
+    font-size: 14px; /* Smaller font size for artist name */
+    color: #333; /* Dark text color */
+    margin-top: 10px; /* Space above the artist name */
+}
+
+/* Styling for the progress bar */
+#progress {
+    -webkit-appearance: none; /* Remove default browser styling for WebKit browsers */
+    width: 100%; /* Full width within container */
+    height: 6px; /* Thickness of the progress bar */
+    background-color: #f53192; /* Pink background color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin: 40px 0; /* Space around progress bar */
+}
+
+/* Styling for the slider thumb in WebKit browsers */
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    background-color: #f53192; /* Pink color */
+    width: 30px; /* Width of thumb */
+    height: 30px; /* Height of thumb */
+    border-radius: 50%; /* Circular thumb */
+    border: 8px solid #fff; /* White border around the thumb */
+    box-shadow: 0 5px 5px rgba(255, 26, 26 , 0.22); /* Shadow for depth */
+}
+
+/* Control buttons container styling */
+.controls {
+    display: flex; /* Align buttons in a row */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+}
+
+/* Styling for each control button */
+.controls div {
+    width: 60px; /* Fixed width for control buttons */
+    height: 60px; /* Fixed height for control buttons */
+    margin: 20px; /* Space around buttons */
+    background-color: #fff; /* White background color */
+    display: inline-flex; /* Inline flex for alignment */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    border-radius: 50%; /* Circular shape */
+    color: #f53192; /* Pink color for icons */
+    box-shadow: 0 10px 20px rgba(255, 26, 26 , 0.22); /* Shadow for depth */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styling for the play button (enlarged and highlighted) */
+.controls div:nth-child(2) {
+    transform: scale(1.5); /* Make the play button larger */
+    background-color: #f53192; /* Pink background for play button */
+    color: #fff; /* White icon color for play button */
+}
